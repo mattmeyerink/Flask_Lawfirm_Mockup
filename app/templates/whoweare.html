@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="whole container">
+
+    <div class="row">
+
+
+        <div class="d-flex col-md-3 bd-highlight mb-3">
+            <div class="sidebar card bg-dark text-white">
+                <img src="{{ url_for('static', filename='./images/nav_side.jpg') }}" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Who We Are
+                    </h5>
+                    <hr color="#FFFFFF">
+                    </hr>
+
+                    <h6 class="card-title"><a href="#" style="color: #FFFFFF;">Welcome</a></h6>
+                    <h6 class="card-title"><a href="{{ url_for('main.show_attorney') }}" style="color: #FFFFFF;">Attorneys</a></h6>
+                    <h6 class="card-title"><a href="#" style="color: #FFFFFF;">Staff</a></h6>
+                    <h6 class="card-title"><a href="#" style="color: #FFFFFF;">Reputation</a></h6>
+                    <h6 class="card-title"><a href="#" style="color: #FFFFFF;">History</a></h6>
+
+
+                    <img class="card-tile_map" src="{{url_for('static', filename='./images/content-navlink-where.jpg') }}">
+                    </br>
+
+
+                    <h7 class="card-title">Where We Work<h7>
+                            <p style="font-size: small;">Find our more about our work coverage area.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+
+            <div class="d-flex_paragraph flex-row bd-highlight mb-3">
+                <p>Who are we? That is one of the most important questions a client can ask us. Our answer-
+                    one of the most respected law firms in the country that cares about your case, your
+                    business, and
+                    solving
+                    your problem. We invite you to get to know our attorneys better and understand the depth
+                    of
+                    experience and
+                    talent we have in the links below. </p>
+            </div>
+
+            <div class="row">
+
+
+                <div class="d-flex_images flex-column bd-highlight mb-3">
+
+                    <div class="p-2 bd-highlight"><a
+                            href="https://ichef.bbci.co.uk/news/800/cpsprodpb/D6E6/production/_109241055_mediaitem109241054.jpg"><img
+                                src="{{ url_for('static', filename='./images/sub-01-staff.jpg') }}"></a></div>
+                    <div class="p-2 bd-highlight"><a
+                            href="https://ichef.bbci.co.uk/news/800/cpsprodpb/3AA6/production/_109241051_mediaitem109241050.jpg"><img
+                                src="{{ url_for('static', filename='./images/sub-01-history.jpg') }}"></a></div>
+
+                </div>
+                <div class="d-flex_images flex-column bd-highlight mb-3">
+                    <div class="p-2 bd-highlight"><a
+                            href="https://cdn.vox-cdn.com/thumbor/ZOx87UXJevxtc1TMzDyTP03lzEU=/0x0:1280x853/920x613/filters:focal(514x224:718x428):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64791142/tumblr_pfb1muZAjW1qdt6e2o6_1280.0.jpg"><img
+                                src="{{ url_for('static', filename='./images/sub-01-attorneys.jpg') }}"></a></div>
+                    <div class="p-2 bd-highlight"><a
+                            href="https://www.reporterherald.com/wp-content/uploads/2019/07/RHC-Z-Twiggy1-sub.jpg?w=982"><img
+                                src="{{ url_for('static', filename='./images/sub-01-reputation.jpg') }}"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

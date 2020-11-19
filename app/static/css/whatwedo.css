@@ -1,0 +1,164 @@
+.picture-left {
+    margin-bottom: 30px;
+    padding:0;
+    display:inline-block;
+}
+
+.picture-right {
+    margin-bottom: 30px;
+    padding:0;
+    display:inline-block;
+}
+
+#content {
+    padding-left:1em;
+    padding-top:2em;
+    padding-bottom:2em;
+}
+
+#content_Container {
+    padding-left:2em;
+}
+
+#content_Container p{
+    margin-bottom:2em;
+}
+
+#images_Container{
+    padding:0;
+}
+
+#sidebar_Container {
+    background-color: #923530;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sidebar_Container a {
+    color: white;
+}
+
+#sidebar_Container a:hover {
+    text-decoration: none;
+}
+
+#sidebar_Header {
+    font-size:1.2em;
+    font-weight:bold;
+    margin-top:1em;
+}
+
+/* Needs Work */
+
+#sidebar_HR {
+    color: white;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+}
+
+#sidebar_Lists {}
+
+.sb_List {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sb_Sublist {
+    list-style-type: none;
+    padding-left: 1.25em;
+}
+
+.sb_Sublist li {}
+
+.sb_Sublist li {}
+
+#image_Container {
+    padding: 0;
+    background-position: -100px -9px;
+    height:100px;
+    background-repeat:no-repeat;
+}
+
+#sidebar_Image {}
+
+#text_Container {
+    margin-top: 1em;
+    padding: 0;
+}
+
+#sidebar_Attorneys {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#sidebar_Text {}
+
+/* Template CSS */
+#inner {
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#logo-head {
+    width: 30%;
+}
+
+ul.link-style>li>a:link {
+    color: black !important
+}
+
+ul.link-style>li>a:link {
+    color: black !important;
+}
+
+ul.link-style>li>a:active {
+    color: black !important;
+}
+
+ul.link-style>li>a:visited {
+    color: black !important;
+}
+
+.navbar-border {
+    border-top: solid;
+    border-bottom: solid;
+}
+
+.border-right {
+    border-right: 0px !important;
+    border-right-color: #767676;
+    padding: 0 20px !important;
+    width: 20%;
+    background: linear-gradient(#ada9a9, #ada9a9) right / 2px 50%, white;
+    background-repeat: no-repeat;
+}
+
+ul.borderrem>li:last-child {
+    background: none !important;
+}
+
+.footer-border {
+    border-color: black;
+    border-top: solid;
+    border-top-width: 2px;
+    margin-top: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-margin {
+    margin-top: 4px;
+}
+
+.dash {
+    color: grey;
+}
+
+.copyright {
+    color: #767676;
+}

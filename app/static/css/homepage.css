@@ -1,0 +1,76 @@
+.newsfeed {
+    color: white;
+    background: linear-gradient(to bottom, #751414 0%, #530E0E 50%, #4C0D0D 100%);
+    margin: 5px;
+    padding: 15px;
+}
+
+.img {
+    margin: 5px;
+}
+
+#wel {
+    padding: 15px;
+}
+
+.welcome {
+    font-size: 10pt;
+    padding: 15px;
+}
+
+.address {
+    font-size: 10pt;
+    padding: 15px;
+}
+
+hr {
+    border-top: 1px solid white;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+#inner{
+   background-color: white;
+}
+
+.contactus_left {
+    color: white;
+    background: linear-gradient(to bottom, #751414 0%, #530E0E 50%, #4C0D0D 100%);
+    margin: 5px;
+    padding: 15px;
+}
+
+.contactus_center{
+    color: black;
+    background-color: transparent;
+    margin: 5px;
+    padding: 15px;
+}
+
+.contactus_right {
+    color: #4C0D0D;
+    background: tan;
+    margin: 5px;
+    padding: 15px;
+}
+
+.contactus_link_black {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .contactus_link_white {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .contactus_link_4C0D0D {
+    color: #4C0D0D;
+    background-color: transparent;
+    text-decoration: none;
+  }

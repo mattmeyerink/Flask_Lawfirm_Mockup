@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="containter" id="content">
+    <div class="row">
+        <div class="col-md-9 outimg">
+            <div class="container img ">
+                <img src="{{ url_for('static', filename='./images/nza_slideshow.jpg') }}" alt="">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="overflow-auto newsfeed " style="max-width: 300px; max-height: 460px;">
+                <div class="newfeedtitle">NEWS FEED</div>
+                <hr white>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat explicabo fugiat totam
+                    repudiandae ea repellat laborum non aliquid omnis eos architecto suscipit sed, dignissimos
+                    mollitia laudantium quibusdam dolorum voluptate?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae temporibus pariatur sit
+                    nulla distinctio assumenda tenetur, sed, magni sequi quisquam, harum necessitatibus! Nisi
+                    architecto laudantium quis facilis, ad dolor eius.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere laudantium, molestiae
+                    perferendis assumenda aliquid quia dolor nulla quam repudiandae harum rerum iure eaque vero
+                    magnam in numquam consectetur quisquam ut?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, soluta quaerat? Error
+                    similique ipsum quisquam dolor? Possimus ex, dolores animi culpa nam corporis adipisci
+                    nesciunt dolorum iste soluta sint tempore.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9  welcome">
+            <div container id=wel>
+                <strong>Welcome to our website!</strong>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate harum veritatis
+                    accusamus,
+                    earum similique aliquam sint quisquam optio! Dolore placeat praesentium ab voluptatem atque
+                    nam
+                    illum aut quod fuga doloremque?
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3  address">
+            <p><strong>Bigshot, Zoo, & Adds, P.C.</strong><br>
+                419 West South Street, Suite 4200 <br>
+                Houston, Texas 35983<br>
+                555-555-5555 (phone)<br>
+                555-555-5555 (Fax)</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

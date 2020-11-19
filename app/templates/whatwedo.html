@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="row" id="content">
+    <!-- Sidebar -->
+    <div class="col-md-3 fluid-container" id="sidebar_Container">
+        <!-- Sidebar Header -->
+        <p id="sidebar_Header">WHAT WE DO</p>
+        <hr id="sidebar_HR" />
+        <br />
+        <!-- Sidebar Lists -->
+        <div class="container" id="sidebar_Lists">
+            <ul class="sb_List">
+                <li><a href="#">Subrogation</a>
+                    <ul class="sb_Sublist">
+                        <li><a href="#">Property</a></li>
+                        <li><a href="#">Workers' Comp</a></li>
+                        <li><br /></li>
+                    </ul>
+                </li>
+                <li><a href="#">Litigation</a>
+                    <ul class="sb_Sublist">
+                        <li><a href="#">Appeliate</a></li>
+                        <li><a href="#">Commerical</a></li>
+                        <li><a href="#">Defense</a></li>
+                        <li><a href="#">Labor / Employment</a></li>
+                        <li><br /></li>
+                    </ul>
+                </li>
+                <li><a href="#">Business</a>
+                    <ul class="sb_Sublist">
+                        <li><a href="#">Brokerage Agreement</a></li>
+                        <li><a href="#">Business Formation</a></li>
+                        <li><a href="#">Business Relate</a></li>
+                        <li><a href="#">Contracts</a></li>
+                        <li><a href="#">Property</a></li>
+                        <li><a href="#">Labor / Employment</a></li>
+                        <li><br /></li>
+                    </ul>
+                    </a>
+                </li>
+                <li><a href="#">Transportation</a>
+                    <ul class="sb_Sublist">
+                        <li><a href="#">Brokerage Agreement</a></li>
+                        <li><a href="#">Business Formation</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- End Sidebar Lists-->
+        <!-- Sidebar Image -->
+        <div class="container">
+            <div class="container" id="image_Container">
+                <!-- <img class="img-fluid" id="sidebar_Image" src="../../../assignment_Resources/images/content-01-attorneys.jpg" /> -->
+            </div>
+        </div>
+        <!--End Sidebar Image -->
+        <!-- Sidebar Attorneys -->
+        <div class="container" id="text_Container">
+            <a href="{{ url_for('main.show_attorney') }}">
+                <p id="sidebar_Attorneys">Attorneys</p>
+            </a>
+            <p id="sidebar_Text">Lorem ipsum dolor sit amet consectetur, adipiscing elit.</p>
+        </div>
+    </div>
+    <!-- End Sidebar -->
+    <!-- Articles -->
+    <div class="col-md-9" id="content_Container">
+        <p>What we do at Bigshot Zoo & Adds PC is prevent our client's problems in some cases,
+            solve their problems in other cases, and ultimately, if the problems cannot be prevented
+            or solved, prepare to take the problems to trial and WIN. Our attorneys, who view themselves as
+            problem solvers,
+            have tried more cases to a jury or judge than most law firms collectively.
+            Whether the problem is a lawsuit, bussiness deal, or formation of a new bussiness, we have the
+            skill, experince, and bussiness acumen to help our clients.
+        </p>
+        <div class="d-flex justify-content-between">
+            <img class="img-fluid picture-left" src="{{ url_for('static', filename='./images/sub-02-subrogation.jpg') }}">
+            <img class="img-fluid picture-left" src="{{ url_for('static', filename='./images/sub-02-litigation.jpg') }}">
+        </div>
+        <div class="d-flex justify-content-between">
+            <img class="img-fluid picture-left" src="{{ url_for('static', filename='./images/sub-02-business.jpg') }}">
+            <img class="img-fluid picture-right" src="{{ url_for('static', filename='./images/sub-02-warehouse.jpg') }}">
+        </div>
+    </div>
+    <!-- End Articles -->
+</div>
+{% endblock content %}

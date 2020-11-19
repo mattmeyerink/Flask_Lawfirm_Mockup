@@ -1,0 +1,40 @@
+.locations_list {
+    margin-top: 50px;
+}
+.locations_list_header{
+    border-bottom: 2px solid grey;  
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+.locations_list_items > p{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-left: 0px;
+    line-height: 1.15;
+}
+.locations_list_row {
+    margin-top: 0px;
+}
+.sidebar {
+    background: rgb(131,15,7);
+    background: linear-gradient(180deg, rgb(184, 52, 43) 0%, rgb(147, 15, 6) 100%);
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.sidebar > h4 {
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+.page_content {
+    margin-top: 50px;
+}
+.text_container {
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+.text_paragraph {
+    line-height: 1.75;
+    font-size: 18px;
+}

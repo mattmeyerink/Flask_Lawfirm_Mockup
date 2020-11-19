@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="containter" id="content">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="contactus_left" style="max-width: 300px; max-height: 500px;">
+                <div class="newfeedtitle">CONTACT US</div>
+                <hr white>
+                <p><a href="###" class='contactus_link_white'>Directions & Parking</a></p>
+                <p><a href="###" class='contactus_link_white'>Career Opportunities</p></a></p>
+                <p><img src="{{ url_for('static', filename='./images/content-navlink-news.jpg') }}"></p>
+                <p><a href="###" class='contactus_link_white'>News & Events</a></p>
+                <p><a href="###" class='contactus_link_white'>Read the most current information about our firm.</a></p>
+
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="contactus_center" style="max-width: 800px; max-height: 800px;">
+                <p><img src="{{ url_for('static', filename='images/content-05-contact.jpg') }}"></p>
+                <p></p>
+                <p>The office hours are 8am - 5pm, Monday through Friday.</p>
+                <p></p>
+                <p>689 East South Street <br> Suite 4210 <br> Houston, Texas 09345</p>
+                <p></p>
+                <p>PH: 332.332.8980 <br> FAX: 332.323.5477</p>
+                <p></p>
+                <p>Contact: Rosemay Sage at <a href="#" class='contactus_link_black'>me@izblaw.com</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="contactus_right " style="max-width: 310px; max-height: 800px;">
+                <p><img src="{{ url_for('static', filename='./images/content-link-where.jpg') }}"></p>
+                <p><a href="#" class='contactus_link_4C0D0D'><b>Where We Work</b><br>Find out more about our work
+                        coverage area.</a></p>
+                <p></p>
+                <p><img src="{{ url_for('static', filename='./images/content-link-reputation.jpg') }}"></p>
+                <p><a href="###" class='contactus_link_4C0D0D'><b>Reputation</b><br>about our admirable reputation.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

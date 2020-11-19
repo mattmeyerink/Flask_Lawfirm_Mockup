@@ -1,0 +1,33 @@
+.img {
+    padding-bottom: 15px;
+}
+
+.img0 {
+    padding-right: 15px;
+}
+
+.add {
+    color: black;
+}
+
+.txt {
+    color: white;
+}
+
+.side {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: rgb(131, 15, 7);
+    background: linear-gradient(180deg, rgba(131, 15, 7, 1) 0%, rgba(108, 11, 4, 1) 100%);
+    color: white;
+    padding: 10px;
+}
+
+.line {
+    color: white;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+}

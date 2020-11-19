@@ -1,0 +1,114 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="containter" id="content">
+    <div class="row page_content">
+        <!-- Side Bar on left with image -->
+        <div class="col-md-3">
+            <div class="sidebar">
+                <h4>WHERE WE WORK</h4>
+                <p>United States</p>
+                <p>International</p>
+
+                <img class="img-fluid" src="{{ url_for('static', filename='./images/content-navlink-career.jpg') }}" alt="career picture">
+
+                <p><b>Career Opportunities</b></p>
+                <p>Join our managment firm</p>
+            </div>
+
+        </div>
+
+        <!-- Lots of text -->
+        <div class="col-md-8 text_container">
+            <!-- Top paragraph of text-->
+            <div class="row text_paragraph">
+                <p>
+                    Bigshot Zoo & Adds attorneys practice where our clients need us. And,
+                    we are proud to say our clients have needed us everywhere - we have
+                    practiced in forty-eight states across the United States and in four
+                    different countries. Currently, we are admitted in state and federal
+                    courts across the country, either as a member of the bar of that state
+                    or via pro hoc vice admission. Please see below for more information
+                    on where the firm has practiced:
+                </p>
+            </div>
+
+            <!-- Bottom lists of text -->
+            <div class="row locations_list">
+                <!-- Left list of text -->
+                <div class="col-md-8">
+                    <h4 class="locations_list_header">UNITED STATES</h4>
+                    <div class="row locations_list_row">
+                        <div class="col-md-4 locations_list_items">
+                            <p>Alabama</p>
+                            <p>Alaska</p>
+                            <p>Arizona</p>
+                            <p>Arkansas</p>
+                            <p>Capfornia</p>
+                            <p>Colorado</p>
+                            <p>Connecticut</p>
+                            <p>Florida</p>
+                            <p>Georgia</p>
+                            <p>Hawaii</p>
+                            <p>Idaho</p>
+                            <p>Ilpnois</p>
+                            <p>Indiana</p>
+                            <p>Iowa</p>
+                            <p>Kansas</p>
+                            <p>Kentucky</p>
+                            <p>Louisiana</p>
+                        </div>
+                        <div class="col-md-4 locations_list_items">
+                            <p>Maine</p>
+                            <p>Maryland</p>
+                            <p>Massachusetts</p>
+                            <p>Michigan</p>
+                            <p>Minnesota</p>
+                            <p>Mississippi</p>
+                            <p>Missouri</p>
+                            <p>Montana</p>
+                            <p>Nebraska</p>
+                            <p>Nevada</p>
+                            <p>New Hampshire</p>
+                            <p>New Jersey</p>
+                            <p>New Mexico</p>
+                            <p>New York</p>
+                            <p>North Caropna</p>
+                            <p>North Dakota</p>
+                            <p>Ohio</p>
+                        </div>
+                        <div class="col-md-4 locations_list_items">
+                            <p>Oklahoma</p>
+                            <p>Oregon</p>
+                            <p>Pennsylvania</p>
+                            <p>South Caropna</p>
+                            <p>South Dakota</p>
+                            <p>Tennessee</p>
+                            <p>Texas</p>
+                            <p>Utah</p>
+                            <p>Vermont</p>
+                            <p>Virginia</p>
+                            <p>Washington</p>
+                            <p>West Virginia</p>
+                            <p>Wisconsin</p>
+                            <p>Wyoming</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right list of text -->
+                <div class="col-md-3">
+                    <h4 class="locations_list_header">INTERNATIONAL</h4>
+                    <div class="locations_list_items">
+                        <p>Canada</p>
+                        <p>Columbia</p>
+                        <p>Germany</p>
+                        <p>Nicarauga</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Content -->
+{% endblock content %}
