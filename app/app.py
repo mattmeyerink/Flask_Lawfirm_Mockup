@@ -9,6 +9,7 @@ from flask_login import LoginManager
 db = SQLAlchemy()
 migrate = Migrate()
 login = LoginManager()
+login.login_view = 'authentication.login'
 
 def create_app():
     app = flask.Flask(__name__)
@@ -23,5 +24,8 @@ def create_app():
 
     from main import main_bp
     app.register_blueprint(main_bp)
+
+    with app.app_context():
+        db.create_all()
 
     return app

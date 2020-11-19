@@ -2,6 +2,7 @@
 import flask
 from config import Config
 from . import main_bp
+from flask_login import current_user, login_required
 
 
 @main_bp.route("/")

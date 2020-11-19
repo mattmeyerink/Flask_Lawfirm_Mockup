@@ -20,11 +20,25 @@
 <body background="{{ url_for('static', filename='./images/nza_background.jpg') }}">
 
     <div class="container" id="inner">
+        {% if not current_user.is_authenticated %}
         <div class=row>
-            <div class="col-md-2 offset-10 logbut">
-                <button class="btn-outline-secondary btn-sm logbut">Login</button>
+            <div class="col-md-2 offset-8">
+                <a class="btn-outline-secondary btn-sm"
+                    href="{{ url_for('authentication.login') }}">Login</a>
+            </div>
+            <div class="col-md-2 logbut">
+                <a class="btn-outline-secondary btn-sm"
+                    href="{{ url_for('authentication.register') }}">Register</a>
             </div>
         </div>
+        {% else %}
+        <div class=row>
+            <div class="col-md-2 offset-8">
+                <a class="btn-outline-secondary btn-sm"
+                    href="{{ url_for('authentication.logout') }}">Logout</a>
+            </div>
+        </div>
+        {% endif %}
 
         <!-- Background Image - Kevin/Dan- shadowing -->
         <!--Start Header - Done by DAN -->

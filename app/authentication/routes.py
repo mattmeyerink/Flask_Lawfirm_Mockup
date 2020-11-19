@@ -14,11 +14,15 @@ def login():
         if u is not None and u.check_hashed_password(form_data.get('password')):
             login_user(u)
             flash(f'{u.email} has logged in successfully', 'success')
-            return redirect(url_for('main.index'))
+            return redirect(url_for('main.show_homepage'))
         else:
             flash('There was an error logging you in. Please try again.', 'warning')
             return redirect(url_for('authentication.login'))
-    return render_template('login.html')
+
+    context = {
+        'pagename': 'homepage'
+    }
+    return render_template('login.html', **context)
 
 @auth_bp.route('/register', methods=['GET', 'POST'])
 def register():
@@ -36,10 +40,12 @@ def register():
             u.save()
             flash('You have registered successfully.', 'primary')
             return redirect(url_for('authentication.login'))
-        except Exception as error:
+        except Exception:
             flash('There was a problem registering you as a new user.', 'danger')
             return redirect(url_for('authentication.register'))
+
     context = {
+        'pagename': 'homepage',
         'form': form
     }
     return render_template('register.html', **context)
